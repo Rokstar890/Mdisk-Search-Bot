@@ -1,6 +1,6 @@
 {
-    "name": "This is Inline Search Bot by @Am_RoBots",
-    "description": "This is Inline Channel Messages Search Bot by @Am_RoBots",
+    "name": "This is Inline Search Bot by @netflix_india_007",
+    "description": "This is Inline Channel Messages Search Bot by @netflix_india_007",
     "keywords": [
         "telegram",
         "channel",
@@ -8,9 +8,9 @@
         "search",
         "bot"
     ],
-    "repository": "https://github.com/8769ANURAG",
-    "website": "https://telegram.dog/MOVIES_ZILAA",
-    "success_url": "https://t.me/sources_cods",
+    "repository": "https://github.com/Rokstar890",
+    "website": "https://telegram.dog/netflixvilla_india",
+    "success_url": "https://t.me/netflixvilla_india",
     "env": {
         "API_ID": {
             "description": "Get this value from my.telegram.org or @USERS_RO_BOT"
@@ -41,7 +41,7 @@
         },
         "UPDATES_CHANNEL": {
             "description": "ID of a Channel which you want to do Force Sub to use the bot. Example: -1001669443507",
-            "required": false
+            "required": True
         },
         "CHANNEL_ID": {
             "description": "Channel ID for Searching Messages."
