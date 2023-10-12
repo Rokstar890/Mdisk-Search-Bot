@@ -9,21 +9,21 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 
 async def ForceSub(bot: Client, cmd: Message):
     try:
-        user = await bot.get_chat_member(chat_id=(int(Config.UPDATES_CHANNEL) if Config.UPDATES_CHANNEL.startswith("-100") else Config.UPDATES_CHANNEL), user_id=cmd.from_user.id)
+        user = await bot.get_chat_member(chat_id=(int(Config.UPDATES_CHANNEL) if Config.UPDATES_CHANNEL.startswith("-1001394587233") else Config.UPDATES_CHANNEL), user_id=cmd.from_user.id)
         if user.status == "kicked":
             await bot.send_message(
                 chat_id=cmd.from_user.id,
-                text="You Are Ban To Use Me. Contact My [ᎯℕUℛᎯᎶ](https://t.me/Am_RoBots).",
+                text="You Are Ban To Use Me. Contact My [Ravi](https://t.me/netflix_india_007).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
             return 400
     except UserNotParticipant:
         try:
-            invite_link = await bot.create_chat_invite_link(chat_id=(int(Config.UPDATES_CHANNEL) if Config.UPDATES_CHANNEL.startswith("-100") else Config.UPDATES_CHANNEL))
+            invite_link = await bot.create_chat_invite_link(chat_id=(int(Config.UPDATES_CHANNEL) if Config.UPDATES_CHANNEL.startswith("-1001394587233") else Config.UPDATES_CHANNEL))
         except FloodWait as e:
             await asyncio.sleep(e.x)
-            invite_link = await bot.create_chat_invite_link(chat_id=(int(Config.UPDATES_CHANNEL) if Config.UPDATES_CHANNEL.startswith("-100") else Config.UPDATES_CHANNEL))
+            invite_link = await bot.create_chat_invite_link(chat_id=(int(Config.UPDATES_CHANNEL) if Config.UPDATES_CHANNEL.startswith("-1001394587233") else Config.UPDATES_CHANNEL))
         except Exception as err:
             print(f"Unable To Do Force Subscribe To {Config.UPDATES_CHANNEL}\n\nError: {err}")
             return 200
@@ -47,7 +47,7 @@ async def ForceSub(bot: Client, cmd: Message):
     except Exception:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="Somthing Went Wrong. Contact My [ᎯℕUℛᎯᎶ](https://t.me/Am_RoBots).",
+            text="Somthing Went Wrong. Contact My [Ravi](https://t.me/netflix_india_007).",
             parse_mode="markdown",
             disable_web_page_preview=True
         )
